@@ -1,0 +1,41 @@
+$black: #222;
+$white: #fff;
+$green: #A3E5C6;
+$fs-18: 18px;
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+
+  &__menu_container {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    &__list {
+      display: flex;
+    }
+
+    &__list__item {
+      color: $green;
+
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &__button {
+    width: 125px;
+    height: 50px;
+    margin-left: 100px;
+    border-radius: 100px;
+    background-color: $green;
+    color: $black;
+    font-size: $fs-18;
+    cursor: pointer;
+  }
+}
